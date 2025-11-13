@@ -1,10 +1,10 @@
  'use client';
-
+// frontend/src/app/page.tsx
 import { useEffect, useState } from 'react';
 import PromoTopBar from '@/components/PromoTopBar';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import StickyNav from '@/components/StickyNav';
+// import StickyNav from '@/components/StickyNav';
 import { api } from '@/services/api';
 import Services from '@/components/Services';
 import WhoWeHelp from '@/components/WhoWeHelp';
