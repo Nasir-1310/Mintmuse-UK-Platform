@@ -4,7 +4,12 @@ import { useEffect, useState } from 'react';
 import PromoTopBar from '@/components/PromoTopBar';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import StickyNav from '@/components/StickyNav';
 import { api } from '@/services/api';
+import Services from '@/components/Services';
+import WhoWeHelp from '@/components/WhoWeHelp';
+import EverythingYouNeedOnePlace from '@/components/EverythingYouNeedOnePlace';
+import WhatWeDo from '@/components/WhatWeDo';
 
 export default function Home() {
   const [message, setMessage] = useState<string>('');
@@ -32,6 +37,11 @@ export default function Home() {
       {/* main content; add top padding to account for fixed header */}
       <main className="pt-24 min-h-screen bg-gradient-to-b from-blue-50 to-gray-50">
         <Hero />
+        {/* <StickyNav /> */}
+        <EverythingYouNeedOnePlace/>
+        <Services />
+        <WhoWeHelp/>    
+        <WhatWeDo/>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-sm mt-12">
           {/* backend connectivity status */}
@@ -48,17 +58,6 @@ export default function Home() {
               )
             )}
           </div>
-
-          <section className="mt-8">
-            <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h2 className="text-2xl font-semibold">Developer notes</h2>
-              <p className="text-gray-600 max-w-2xl">
-                This sample page includes a responsive, accessible header and a hero section. For SEO we use proper semantic elements
-                (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;h1&gt;</code>). Replace the placeholder images in
-                <code> /public/images/</code> with your provided assets (see instructions below).
-              </p>
-            </div>
-          </section>
         </div>
       </main>
     </>

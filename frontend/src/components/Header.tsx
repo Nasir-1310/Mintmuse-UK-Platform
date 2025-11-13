@@ -219,7 +219,7 @@ export default function Header() {
 
                     {/* Menu Content */}
                     <div
-                        className="fixed left-0 right-0 z-40 menu-area"
+                        className="fixed left-0 right-0 z-45 menu-area"
                         style={{ top: scrolled ? '122px' : '128px' }}
                         onMouseLeave={handleMegaMenuMouseLeave}
                     >

@@ -38,7 +38,7 @@ export default function PromoTopBar() {
               className="inline-flex items-center justify-center gap-2 rounded-md px-2 py-2 text-xs font-semibold text-white transition hover:bg-white/10 lg:min-w-[8rem] lg:px-4"
               aria-label="WhatsApp"
             >
-              <FaWhatsapp className="h-4 w-4" aria-hidden="true" />
+              <FaWhatsapp size={16} aria-hidden="true" />
               <span className="hidden lg:inline">WhatsApp</span>
             </a>
 
@@ -102,7 +102,7 @@ export default function PromoTopBar() {
                 className="inline-flex items-center justify-center rounded-md p-1.5 text-white transition hover:bg-white/10"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp className="h-4 w-4" aria-hidden="true" />
+                <FaWhatsapp size={16} aria-hidden="true" />
               </a>
 
               <a
